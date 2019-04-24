@@ -13,7 +13,12 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
-
+// msg_subject
+if (empty($_POST["msg_subject"])) {
+    $errorMSG .= "Subject is required ";
+} else {
+    $email = $_POST["msg_subject"];
+}
 // MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
@@ -30,11 +35,14 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
+$Body .= "msg_subject: ";
+$Body .= $msg_subject;
+$Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 // send email
-$success = mail($EmailTo, $Body, "From:".$email);
+$success = mail($EmailTo, $msg_subject, $Body, "From:".$email);
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
