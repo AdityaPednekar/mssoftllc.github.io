@@ -30,14 +30,11 @@ $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
 $Body .= "\n";
-$Body .= "msg_subject: ";
-$Body .= $msg_subject;
-$Body .= "\n";
 $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 // send email
-$success = mail($EmailTo, $msg_subject, $Body, "From:".$email);
+$success = mail($EmailTo, $Body, "From:".$email);
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
