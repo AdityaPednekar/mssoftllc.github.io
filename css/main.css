@@ -1644,8 +1644,8 @@ button:focus {
 #carousel-area {
   overflow: hidden;
   background: #296ec1;
-    width: inherit;
-    height: inherit;
+    width: 2560px;
+    height: 1500px;
 
 }
 
