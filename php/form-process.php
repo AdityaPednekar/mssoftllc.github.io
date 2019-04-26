@@ -12,6 +12,12 @@ if (empty($_POST["email"])) {
 } else {
     $email = $_POST["email"];
 }
+// SUBJECT
+if (empty($_POST["msg_subject"])) {
+    $errorMSG .= "Subject is required ";
+} else {
+    $email = $_POST["msg_subject"];
+}
 // MESSAGE
 if (empty($_POST["message"])) {
     $errorMSG .= "Message is required ";
@@ -19,7 +25,7 @@ if (empty($_POST["message"])) {
     $message = $_POST["message"];
 }
 $EmailTo = "measuresinfinite89@gmail.com";
-$Subject = "New Message Received";
+$Subject = "$msg_subject";
 // prepare email body text
 $Body = "";
 $Body .= "Name: ";
@@ -32,7 +38,7 @@ $Body .= "Message: ";
 $Body .= $message;
 $Body .= "\n";
 // send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
+$success = mail($EmailTo, $msg_subject, $Body, "From:".$email);
 // redirect to success page
 if ($success && $errorMSG == ""){
    echo "success";
