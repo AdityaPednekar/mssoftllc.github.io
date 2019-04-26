@@ -10,7 +10,7 @@ body {
   color: #546E7A;
   font-size: 14px;
   font-weight: 400;
-  background: #f7f7f7;
+  background: #fff;
   overflow-x: hidden;
 }
 
@@ -546,7 +546,7 @@ button:focus {
 }
 
 .navbar-brand img {
-  max-width: 80px;
+  max-width: 250px;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:focus,
@@ -1641,7 +1641,7 @@ button:focus {
 /* ==========================================================================
   Slider
    ========================================================================== */
-carousel-area {
+#carousel-area {
   overflow: hidden;
   background: #2c3e50;
 }
@@ -1764,6 +1764,7 @@ carousel-area {
 .contents .header-button .btn i {
   margin-left: 10px;
 }
+
 /* ==========================================================================
    Blog 
    ========================================================================== */
