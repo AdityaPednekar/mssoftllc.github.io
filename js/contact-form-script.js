@@ -8,7 +8,7 @@ $("#contactForm").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
-         submitMSG(true, "Hang on! We'll respond to you soon!");
+         submitMSG(true, "Message Submitted!");
     }
 });
 
