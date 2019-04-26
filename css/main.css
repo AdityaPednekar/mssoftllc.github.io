@@ -1641,17 +1641,13 @@ button:focus {
 /* ==========================================================================
   Slider
    ========================================================================== */
-#carousel-area {
+carousel-area {
   overflow: hidden;
-  background: #296ec1;
-    width: 2560px;
-    height: 1500px;
-
+  background: #2c3e50;
 }
 
 #carousel-area .carousel-item {
-  
-   
+  background-size: 100%;
 }
 
 #carousel-area .carousel-item .carousel-caption {
@@ -1677,7 +1673,7 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption h4 {
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
@@ -1768,7 +1764,6 @@ button:focus {
 .contents .header-button .btn i {
   margin-left: 10px;
 }
-
 /* ==========================================================================
    Blog 
    ========================================================================== */
