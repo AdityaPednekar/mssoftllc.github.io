@@ -8,7 +8,6 @@ $("#contactForm").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
-         submitMSG(true, "Message Submitted!");
     }
 });
 
