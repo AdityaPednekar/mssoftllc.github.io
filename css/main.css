@@ -10,7 +10,7 @@ body {
   color: #546E7A;
   font-size: 14px;
   font-weight: 400;
-  background: #fff;
+  background: #f7f7f7;
   overflow-x: hidden;
 }
 
@@ -546,7 +546,7 @@ button:focus {
 }
 
 .navbar-brand img {
-  max-width: 250px;
+  max-width: 80px;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:focus,
@@ -1673,7 +1673,7 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption h4 {
-  color: #ffffff;
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
