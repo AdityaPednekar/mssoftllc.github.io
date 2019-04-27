@@ -3,7 +3,6 @@ $("#contactForm").validator().on("submit", function (event) {
         // handle the invalid form...
         formError();
         submitMSG(false, "Did you fill in the form properly?");
-         
     } else {
         // everything looks good!
         event.preventDefault();
@@ -16,18 +15,15 @@ function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
     var message = $("#message").val();
-
 
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+        data: "name=" + name + "&email=" + email + "&message=" + message,
         success : function(text){
             if (text == "success"){
                 formSuccess();
-                submitMSG(true,text);
             } else {
                 formError();
                 submitMSG(false,text);
