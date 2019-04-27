@@ -7,6 +7,7 @@ $("#contactForm").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
+        submitMSG(true, "Message Submitted!")
     }
 });
 
@@ -24,6 +25,7 @@ function submitForm(){
         success : function(text){
             if (text == "success"){
                 formSuccess();
+                submitMSG(true,text);
             } else {
                 formError();
                 submitMSG(false,text);
