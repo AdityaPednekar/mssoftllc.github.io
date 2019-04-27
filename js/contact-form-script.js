@@ -2,8 +2,7 @@ $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
-        submitMSG(false, "Fields missing");
-         submitMSG(true, "Thank You!");
+        submitMSG(false, "Did you fill in the form properly?");
     } else {
         // everything looks good!
         event.preventDefault();
