@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/color-switcher.css">
     <link rel="stylesheet" href="css/menu_sideslide.css">
     <link rel="stylesheet" href="css/main.css">    
-      <link rel="stylesheet" href="form.css" >
     <link rel="stylesheet" href="css/responsive.css">
 
   </head>
@@ -465,33 +464,29 @@ All of our engineering services start with our customer’s business requirement
           <div class="row">          
             <div class="col-lg-9 col-md-9 col-xs-12">
               <div class="contact-block">
-                 <form id="reused_form">
-                                    <div class="form-group">
-                                        <label >Name</label>
-                                        <input type="text" name="name" required class="form-control" placeholder="Enter Name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label >Email</label>
-                                        <input type="email" name="email" required class="form-control" placeholder="Enter Email">
-                                    </div>
-                                    <div class="form-group">
-                                        <label >Message</label>
-                                        <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-raised btn-lg btn-warning" type="submit">Send</button>
-                                    </div>
-                                </form>
-                                <div id="error_message" style="width:100%; height:100%; display:none; ">
-                                    <h4>
-                                        Error
-                                    </h4>
-                                    Sorry there was an error sending your form. 
-                                </div>
-                                <div id="success_message" style="width:100%; height:100%; display:none; ">
-<h2>Success! Your Message was Sent Successfully.</h2>
-</div>
-                            </div>
+                 <form role="form" id="contactForm" data-toggle="validator" class="shake">
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+    </form>
+              </div>
             </div>
               
             <div class="col-lg-3 col-md-3 col-xs-12">
