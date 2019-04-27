@@ -10,7 +10,7 @@ body {
   color: #546E7A;
   font-size: 14px;
   font-weight: 400;
-  background: #f7f7f7;
+  background: #fff;
   overflow-x: hidden;
 }
 
@@ -546,7 +546,7 @@ button:focus {
 }
 
 .navbar-brand img {
-  max-width: 80px;
+  max-width: 250px;
 }
 
 .navbar-expand-md .navbar-nav .nav-link:focus,
@@ -1643,14 +1643,11 @@ button:focus {
    ========================================================================== */
 #carousel-area {
   overflow: hidden;
-  background: #296ec1;
-    width: auto;
-    height: auto;
+  background: #2c3e50;
 }
 
 #carousel-area .carousel-item {
-  background-size: auto;
-   
+  background-size: 100%;
 }
 
 #carousel-area .carousel-item .carousel-caption {
@@ -1676,7 +1673,7 @@ button:focus {
 }
 
 #carousel-area .carousel-item .carousel-caption h4 {
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
