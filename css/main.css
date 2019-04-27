@@ -1643,11 +1643,14 @@ button:focus {
    ========================================================================== */
 #carousel-area {
   overflow: hidden;
-  background: #2c3e50;
+  background: #296ec1;
+    width: auto;
+    height: auto;
 }
 
 #carousel-area .carousel-item {
-  background-size: 100%;
+  background-size: auto;
+   
 }
 
 #carousel-area .carousel-item .carousel-caption {
